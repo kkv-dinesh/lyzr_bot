@@ -9,7 +9,7 @@ load_dotenv()
 
 app = FastAPI()
 
-openai_api_key = os.getenv("OPENAI_API_KEY") 
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 WEAVIATE_URL = os.getenv("WEAVIATE_URL", "http://weaviate:8080")
 client = weaviate.Client(WEAVIATE_URL)
